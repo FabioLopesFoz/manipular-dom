@@ -1,30 +1,15 @@
-// Criando um elemento para o título
 let titulo = document.createElement("h1");
-
-// Manipulando o elemento
 titulo.id = "titulo";
-titulo.innerText = "Loja de hamburguers";
-
-// Capturando o "elemento pai" dos elementos 'titulo' e 'produto'
+titulo.innerText = "Loja de Calçados";
 let body = document.querySelector("body");
-
-// Adicionando o elemento 'titulo' no DOM
 body.appendChild(titulo);
-
-// ------------------------------------------- //
-
-// Criando um elemento para o produto
 let produto = document.createElement("div");
-
-// Manipulando o elemento
 produto.innerHTML = `
   <div>
-    <h2>X-Salada</h2>
-    <img src="https://i.ytimg.com/vi/zlZEDtopR8Q/hqdefault.jpg" alt="x-salada">
-    <p>Pão com hamburguer, alface, tomate e queijo mussarela.</p>
-    <p id="preco-x-salada">R$ 14.90</p>
+    <h2>Tênis</h2>
+    <img src="https://static.netshoes.com.br/produtos/tenis-adidas-coreracer-masculino/26/NQQ-4635-026/NQQ-4635-026_zoom1.jpg?ts=1697639299&ims=544x" alt="tenis">
+    <p>Tênis Adidas Coreracer - Preto e Branco.</p>
+    <p id="preco">R$ 159.99</p>
   </div>
 `;
-
-// Adicionando o elemento no dom
 body.appendChild(produto)
